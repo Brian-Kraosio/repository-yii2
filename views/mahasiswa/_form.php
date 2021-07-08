@@ -12,13 +12,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id')->textInput() ?>
-
     <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'alamat')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tanggal_lahir')->textInput() ?>
+    <?= $form->field($model, 'tanggal_lahir')->textInput(['type' => 'datetime-local']) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

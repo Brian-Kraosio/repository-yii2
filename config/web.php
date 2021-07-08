@@ -50,6 +50,7 @@ $config = [
         ],
     ],
     'params' => $params,
+    'defaultRoute' => 'mahasiswa/index'
 ];
 
 if (YII_ENV_DEV) {

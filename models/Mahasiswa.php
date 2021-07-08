@@ -28,9 +28,7 @@ class Mahasiswa extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['id'], 'integer'],
-            [['tanggal_lahir'], 'safe'],
+            [['tanggal_lahir'],  'safe'],
             [['nama', 'alamat'], 'string', 'max' => 255],
             [['id'], 'unique'],
         ];
